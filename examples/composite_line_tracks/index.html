@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../../build/tnt.board.css" type="text/css" />
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://tntvis.github.io/tnt.board/build/tnt.board.min.js"></script>
+    <script src="features.js"></script>
+</head>
+
+<body>
+    <div id="mydiv"></div>
+    <script>
+    var myBoard = tnt.board().from(1).to(100).min(-200).max(300);
+    var theme = features_theme();
+    theme(myBoard, document.getElementById("mydiv"));
+    </script>
+</body>
